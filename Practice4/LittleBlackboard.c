@@ -30,16 +30,17 @@ int main(int argc, char ** argv){
             printf("Enter ID: \n");
             scanf("%s", &id);
             fprintf(f,"%s\t%s\n\r", name, id);
-
+            if(i!=size-1){
+            printf("Do you wish to add more? [Y/n]\n");
             while(1){
 
-                printf("Do you wish to add more? [Y/n]\n");
+                
                 scanf("%c", &res);
                 if(res=='Y'|| res =='y')goto x;
                 if(res =='n'|| res == 'N') goto end;
             }
             x: ;
-
+            }
         }
         end:
         printf("Students information stored in Datalog.txt\n");
