@@ -38,12 +38,10 @@ int main(int argc, char *argv[])
 			if(strncmp(argv[i], "-a", strlen("-a")) == 0)
 			{	
 				flagArea = 1;
-			}
-			else if(strncmp(argv[i], "-p", strlen("-p")) == 0)
+			}else if(strncmp(argv[i], "-p", strlen("-p"))==0)
 			{
 				flagPerimetro = 1;
-			}
-			else if(strncmp(argv[i], "-w", strlen("-w")) == 0)
+			}else if(strncmp(argv[i], "-w", strlen("-w")) == 0)
 			{
 				w = atoi(argv[i+1]);
 			}
