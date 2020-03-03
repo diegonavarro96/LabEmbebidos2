@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 jf	jf
 jfj	jfjf
-
+
+=======
+qw	asd
+>>>>>>> 500ced9ef3a1a395f1492c62b5ede211f94ad9bb
