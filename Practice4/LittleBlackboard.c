@@ -29,19 +29,11 @@ int main(int argc, char ** argv){
             scanf("%s", &name);
             printf("Enter ID: \n");
             scanf("%s", &id);
-<<<<<<< HEAD
             fprintf(f,"%s\t%s\n\r", name, id);
             if(i!=size-1){
             printf("Do you wish to add more? [Y/n]\n");
             while(1){
-
-                
-=======
-            fprintf(f,"%s\t%s\n", name, id);
-		printf("Do you wish to add more? [y/n]\n");
-            while(1){
              
->>>>>>> 500ced9ef3a1a395f1492c62b5ede211f94ad9bb
                 scanf("%c", &res);
                 if(res=='Y'|| res =='y')goto x;
                 if(res =='n'|| res == 'N') goto end;
@@ -54,3 +46,4 @@ int main(int argc, char ** argv){
         fclose(f);
         return 0;
 }
+

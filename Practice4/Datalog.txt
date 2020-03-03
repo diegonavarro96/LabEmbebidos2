@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-jf	jf
-jfj	jfjf
-
-=======
-qw	asd
->>>>>>> 500ced9ef3a1a395f1492c62b5ede211f94ad9bb
+diego	a00817666
+jesus	a0092832
+mauricio	a0838383
+
