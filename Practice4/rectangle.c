@@ -35,17 +35,13 @@ int main(int argc, char *argv[])
 	{	
 		for(int i = 1; i < 6; i++)
 		{	
-			printf("%s\n", argv[i]);
-			if(strncmp(argv[i], "-a", strlen("-a") && !flagPerimetro) == 0)
+			if(strncmp(argv[i], "-a", strlen("-a")) == 0)
 			{	
 				flagArea = 1;
-			}else {printf("Perimetro Seleccionado\n" ); return 1;}
-			if(strncmp(argv[i], "-p", strlen("-p")) == 0 && !flagArea)
+			}else if(strncmp(argv[i], "-p", strlen("-p"))==0)
 			{
 				flagPerimetro = 1;
-			}
-			else {}
-			if(strncmp(argv[i], "-w", strlen("-w")) == 0)
+			}else if(strncmp(argv[i], "-w", strlen("-w")) == 0)
 			{
 				w = atoi(argv[i+1]);
 			}
