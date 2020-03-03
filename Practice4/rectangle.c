@@ -35,7 +35,6 @@ int main(int argc, char *argv[])
 	{	
 		for(int i = 1; i < 6; i++)
 		{	
-			printf("%s\n", argv[i]);
 			if(strncmp(argv[i], "-a", strlen("-a")) == 0)
 			{	
 				flagArea = 1;
