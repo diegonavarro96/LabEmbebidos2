@@ -29,11 +29,10 @@ int main(int argc, char ** argv){
             scanf("%s", &name);
             printf("Enter ID: \n");
             scanf("%s", &id);
-            fprintf(f,"%s\t%s\n\r", name, id);
-
+            fprintf(f,"%s\t%s\n", name, id);
+		printf("Do you wish to add more? [y/n]\n");
             while(1){
-
-                printf("Do you wish to add more? [Y/n]\n");
+             
                 scanf("%c", &res);
                 if(res=='Y'|| res =='y')goto x;
                 if(res =='n'|| res == 'N') goto end;
