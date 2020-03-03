@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+//Esto es un comentario
 int  calcArea(int l, int w){
 	
 	return l * w;	
