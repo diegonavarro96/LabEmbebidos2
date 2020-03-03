@@ -5,7 +5,8 @@
 int main(int argc, char ** argv){
         int size = 0;
         char res;
-        char* name, *id;
+        char name [50];
+	char id [50];
         FILE *f;
         f = fopen("Datalog.txt", "w");
         if(!f){
@@ -28,14 +29,16 @@ int main(int argc, char ** argv){
             scanf("%s", &name);
             printf("Enter ID: \n");
             scanf("%s", &id);
-            fprintf("%s\t%s\n\r", name, id);
+            fprintf(f,"%s\t%s\n\r", name, id);
+
             while(1){
+
                 printf("Do you wish to add more? [Y/n]\n");
                 scanf("%c", &res);
-                if(res=="Y")goto x;
-                if(res =="n") goto end;
+                if(res=='Y'|| res =='y')goto x;
+                if(res =='n'|| res == 'N') goto end;
             }
-            x: 
+            x: ;
 
         }
         end:
