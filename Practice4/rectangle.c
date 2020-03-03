@@ -38,18 +38,17 @@ int main(int argc, char *argv[])
 			printf("%s\n", argv[i]);
 			if(strncmp(argv[i], "-a", strlen("-a")) == 0)
 			{	
-				printf("HOLA");
 				flagArea = 1;
 			}
-			else if(strncmp(argv[i]))
+			else if(strncmp(argv[i], "-p", strlen("-p")) == 0)
 			{
 				flagPerimetro = 1;
 			}
-			else if(argv[i] == "-w")
+			else if(strncmp(argv[i], "-w", strlen("-w")) == 0)
 			{
 				w = atoi(argv[i+1]);
 			}
-			else if(argv[i]== "-l")
+			else if(strncmp(argv[i], "-l", strlen("-l")) == 0)
 			{
 				l = atoi(argv[i+1]);
 			}
