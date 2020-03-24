@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#./i2c -s104 -dw -ib 1 0x00
+
+sec=`date +%S`
+min=`date +%M`
+hr=`date +%H`
+secHex=`printf '%x' $sec`
+minHex=`printf '%x' $min`
+hrHex=`printf '%x' $hr`
+echo $hr $min $sec
+echo 0x$hrHex 0x$minHex 0x$secHex
