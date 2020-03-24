@@ -33,8 +33,7 @@ int main(int argc, char ** argv){
             if(i!=size-1){
             printf("Do you wish to add more? [Y/n]\n");
             while(1){
-
-                
+             
                 scanf("%c", &res);
                 if(res=='Y'|| res =='y')goto x;
                 if(res =='n'|| res == 'N') goto end;
@@ -47,3 +46,4 @@ int main(int argc, char ** argv){
         fclose(f);
         return 0;
 }
+
