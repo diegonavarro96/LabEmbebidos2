@@ -9,7 +9,7 @@ temp=${temp:42:2}
 temp=$(( 16#$temp ))
 echo "RECEIVER> Temperature $temp C\n" >>data.txt
 
-if [$temp -gt 35]
+if [ $temp -gt 35 ]
 then
     ./i2c -s104 -dw -ib 1 0x00
     sec=`./i2c -s104 -dr -ib 1`
