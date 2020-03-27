@@ -1,0 +1,4 @@
+RECEIVER> Temperature 31 C\n
+//
+Monday
+27::
