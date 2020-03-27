@@ -1,4 +1,8 @@
 RECEIVER> Temperature 31 C\n
-//
-Monday
-27::
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
+RECEIVER> Temperature 31 C\n
