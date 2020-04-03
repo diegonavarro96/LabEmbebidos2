@@ -1,0 +1,16 @@
+	.data
+	string: .asciz "\nHello World!\n"	
+
+	.text
+	.global main
+	.extern printf
+
+main:
+        push {ip, lr}
+
+        ldr r0, =string        bl printf
+
+        pop {ip, pc}.global main
+	
+main:   mov r0, #2       @ load immediate value 2 into Register r0 
+	bx lr            @ return 2 to Operating Sytem

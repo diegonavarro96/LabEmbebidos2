@@ -1,11 +1,13 @@
-prompt1: .asicz "Give me the first operand: \n"
-prompt1: .asicz "Give me the second operand: \n"
-format: .asicz "%d"
-output: .asics "%d + %d = %d\n"
+.data
+.balign 4
+prompt1: .asciz "Give me the first operand: \n"
+prompt2: .asciz "Give me the second operand: \n"
+format: .asciz "%d"
+output: .asciz "%d + %d = %d\n"
 x: .int 0
 y: .int 0
 z: .int 0
-
+.text
 .extern printf
 .extern scanf
 .global main
@@ -36,8 +38,11 @@ main:
 
     ldr r0, =output
     ldr r1, =x
+    ldr r1, [r1]
     ldr r2, =y
+    ldr r2, [r2]
     ldr r3, =z
+    ldr r3, [r3]
     bl printf
 
     pop {ip, pc}
