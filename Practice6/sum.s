@@ -1,7 +1,7 @@
-prompt1: .asicz "Give me the first operand: \n"
-prompt1: .asicz "Give me the second operand: \n"
-format: .asicz "%d"
-output: .asics "%d + %d = %d\n"
+prompt1: .asciz "Give me the first operand: \n"
+prompt2: .asciz "Give me the second operand: \n"
+format: .asciz %d"
+output: .asciz "%d + %d = %d\n"
 x: .int 0
 y: .int 0
 z: .int 0
