@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 .data
 .balign 4
 prompt1: .asciz "Give me the first operand: \n"
 prompt2: .asciz "Give me the second operand: \n"
 format: .asciz "%d"
+=======
+prompt1: .asciz "Give me the first operand: \n"
+prompt2: .asciz "Give me the second operand: \n"
+format: .asciz %d"
+>>>>>>> c8fa2372679573adbb714bbf4e7082c3793adfa9
 output: .asciz "%d + %d = %d\n"
 x: .int 0
 y: .int 0
