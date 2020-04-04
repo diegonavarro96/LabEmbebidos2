@@ -56,7 +56,7 @@ main:
     beq mult
     cmp r3, #0x2f
     beq div
-    ldr r0, #0x00
+    ldr r0, =0
     b done
 @metodo suma
 suma:
@@ -69,11 +69,11 @@ resta:
 @multiplication
 mult:
     mul r5, r0 ,r1
-    ldr r0, r5
+    mov r0, r5
     b done
 @division
 div:
-@   sdiv r0, r0, r1
+   sdiv r0, r0, r1
    b done
 done:
     str r0, [r2]
